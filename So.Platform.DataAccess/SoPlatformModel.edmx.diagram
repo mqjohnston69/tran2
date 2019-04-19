@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cc900ae156844f47b06c0b06f1b28e40" Name="Diagram1" ZoomLevel="54" >
+        <EntityTypeShape EntityType="So_PlatformModel.Attrib" Width="1.5" PointX="102.625" PointY="31.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AttribTyp" Width="1.5" PointX="100.375" PointY="31.875" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuditAction" Width="1.5" PointX="97.875" PointY="12" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuditCatAuditTyp" Width="1.5" PointX="95.625" PointY="15.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuditCat" Width="1.5" PointX="93.625" PointY="18.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuditDtl" Width="1.5" PointX="100.125" PointY="15.375" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Audit" Width="1.5" PointX="97.875" PointY="14.875" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuditTyp" Width="1.5" PointX="97" PointY="20.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuthItemAuthPerm" Width="1.5" PointX="46.625" PointY="42.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuthItem" Width="1.5" PointX="50.75" PointY="44" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuthPerm" Width="1.5" PointX="55.625" PointY="46.875" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuthRolAuthItemAuthPerm" Width="1.5" PointX="42.5" PointY="42.125" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuthRol" Width="1.5" PointX="38.375" PointY="35" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.AuthRolTyp" Width="1.5" PointX="44.75" PointY="25.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Contact" Width="1.5" PointX="82" PointY="28.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ContactTyp" Width="1.5" PointX="83.125" PointY="24.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Country" Width="1.5" PointX="89.125" PointY="38.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.soUpload" Width="2.5" PointX="24.5" PointY="9.125" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.ElmElm" Width="1.5" PointX="65.25" PointY="45" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Elm" Width="1.5" PointX="67.375" PointY="42.125" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ElmTyp" Width="1.5" PointX="67.625" PointY="37.375" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.EntityAttributeTyp" Width="1.5" PointX="38" PointY="45.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.EquipTyp" Width="1.5" PointX="92.375" PointY="26.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Gender" Width="1.5" PointX="80.375" PointY="23.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.IconVisual" Width="1.5" PointX="70" PointY="11.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.IconVisualTyp" Width="1.5" PointX="34.875" PointY="12.375" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.LayoutTyp" Width="1.5" PointX="34.875" PointY="30.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Locality" Width="1.5" PointX="88" PointY="8.125" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Locn" Width="1.5" PointX="84.875" PointY="35.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.LogCat" Width="1.5" PointX="74" PointY="4.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.LogEntry" Width="1.5" PointX="81.125" PointY="5.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.MenuItem" Width="1.5" PointX="48.875" PointY="6.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Menu" Width="1.5" PointX="53" PointY="5.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModAuthRol" Width="1.5" PointX="46.5" PointY="15.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModelEntity" Width="1.5" PointX="45.625" PointY="48" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModelEntityAttribute" Width="1.5" PointX="41.625" PointY="47.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModElmElm" Width="1.5" PointX="58.5" PointY="28.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModElm" Width="1.5" PointX="66.375" PointY="33.125" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModElmTyp" Width="1.5" PointX="69.25" PointY="32.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Mod" Width="1.5" PointX="55.625" PointY="33.125" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModSetting" Width="1.5" PointX="59.375" PointY="32.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModSettingValue" Width="1.5" PointX="61.625" PointY="32.375" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModState" Width="1.5" PointX="52.75" PointY="33" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ModTyp" Width="1.5" PointX="53.125" PointY="36.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgContact" Width="1.5" PointX="77.625" PointY="30.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgCust" Width="1.5" PointX="87" PointY="48" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgLocn" Width="1.5" PointX="88.75" PointY="32.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgNote" Width="1.5" PointX="80" PointY="38.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgOrg" Width="1.5" PointX="84" PointY="44.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Org" Width="1.5" PointX="79.5" PointY="44.125" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgStatus" Width="1.5" PointX="77" PointY="54.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgStatusHist" Width="1.5" PointX="81.875" PointY="48.125" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgTypOrgStatus" Width="1.5" PointX="77.125" PointY="51.875" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgTyp" Width="1.5" PointX="74.5" PointY="48.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PartGrpPart" Width="1.5" PointX="22.875" PointY="20.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PartGrp" Width="1.5" PointX="20.625" PointY="18.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PartIndicator" Width="1.5" PointX="30.25" PointY="26.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Part" Width="1.5" PointX="25.625" PointY="21.375" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PartSetting" Width="1.5" PointX="42.75" PointY="23.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PartTyp" Width="1.5" PointX="26.625" PointY="27" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PerNote" Width="1.5" PointX="81.5" PointY="18.875" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Per" Width="1.5" PointX="76.875" PointY="18.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PersContact" Width="1.5" PointX="77.875" PointY="25.875" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PlaceHolder" Width="1.5" PointX="39.375" PointY="30.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PortModModElm" Width="1.5" PointX="62.375" PointY="23.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PortMod" Width="1.5" PointX="57.125" PointY="18.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PortModSetting" Width="1.5" PointX="59.875" PointY="18.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PortModSettingValue" Width="1.5" PointX="62.375" PointY="18.875" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Port" Width="1.5" PointX="54.5" PointY="16.375" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PortScene" Width="1.5" PointX="40.125" PointY="25.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.PortUser" Width="1.5" PointX="64.75" PointY="16" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ScenePartPartSetting" Width="1.5" PointX="34.375" PointY="24" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ScenePart" Width="1.5" PointX="34.5" PointY="16.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Scene" Width="1.5" PointX="37.125" PointY="30" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.Setting" Width="1.5" PointX="47" PointY="31.375" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.SettingTyp" Width="1.5" PointX="46.75" PointY="35.25" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.State" Width="1.5" PointX="75.625" PointY="9.875" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.UserLoginHist" Width="1.5" PointX="79.375" PointY="14.375" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.UserModAuthRol" Width="1.5" PointX="65.375" PointY="19.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.User" Width="1.5" PointX="73.5" PointY="16.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowDef" Width="1.5" PointX="14" PointY="11.75" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowDefStatRea" Width="1.5" PointX="5.75" PointY="14.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowDefWkflowStat" Width="2" PointX="10" PointY="14.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowDefWkflowStatWkflowStat" Width="1.5" PointX="7.5" PointY="20.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowInstanceDoc" Width="2.125" PointX="20.25" PointY="15" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowInstance" Width="2.25" PointX="16.25" PointY="11.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowStatRea" Width="2.75" PointX="5.625" PointY="9.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowStat" Width="1.5" PointX="13.125" PointY="16" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowStepHist" Width="1.5" PointX="9.875" PointY="10.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowStepNote" Width="1.5" PointX="7.875" PointY="12.5" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.WkflowTyp" Width="1.5" PointX="14" PointY="8.625" FillColor="64, 64, 64" />
+        <EntityTypeShape EntityType="So_PlatformModel.ZipCode" Width="1.5" PointX="91.625" PointY="7.625" FillColor="64, 64, 64" />
+        <AssociationConnector Association="So_PlatformModel.FK_AttribAttribTyp" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuditDtl_AuditAction" />
+        <AssociationConnector Association="So_PlatformModel.FK_Audit_AuditCatAuditTyp" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuditCatAuditTyp_AuditCat" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuditCatAuditTyp_AuditTyp" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuditDtl_Audit" />
+        <AssociationConnector Association="So_PlatformModel.FK_Audit_AncestorAudit" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuthItemAuthItemAuthPerm" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuthItemAuthPermAuthRolAuthItemAuthPerm" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuthPermAuthItemAuthPerm" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuthItemMenu" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuthItemModelEntityAttribute" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuthItemModElmElm" />
+        <AssociationConnector Association="So_PlatformModel.FK_ElmAuthItem" />
+        <AssociationConnector Association="So_PlatformModel.FK_ElmElmAuthItem" />
+        <AssociationConnector Association="So_PlatformModel.FK_MenuItemAuthItem" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModelEntityAuthItem" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModElmAuthItem" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuthRolAuthRolAuthItemAuthPerm" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuthRolModAuthRol" />
+        <AssociationConnector Association="So_PlatformModel.FK_AuthRolTypAuthRol" />
+        <AssociationConnector Association="So_PlatformModel.FK_ContactOrgContract" />
+        <AssociationConnector Association="So_PlatformModel.FK_ContactPersContact" />
+        <AssociationConnector Association="So_PlatformModel.FK_ContactTypContact" />
+        <AssociationConnector Association="So_PlatformModel.FK_CountryLocn" />
+        <AssociationConnector Association="So_PlatformModel.FK_DocWkflowInstanceDoc" />
+        <AssociationConnector Association="So_PlatformModel.FK_ElmElmElm" />
+        <AssociationConnector Association="So_PlatformModel.FK_ElmElmElm1" />
+        <AssociationConnector Association="So_PlatformModel.FK_ElmElmTyp" />
+        <AssociationConnector Association="So_PlatformModel.FK_ElmModElmElm" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModelEntityAttributeEntityAttributeTyp" />
+        <AssociationConnector Association="So_PlatformModel.FK_GenderIconVisual" />
+        <AssociationConnector Association="So_PlatformModel.FK_GenderPers" />
+        <AssociationConnector Association="So_PlatformModel.FK_IconVisualIconVisualTyp" />
+        <AssociationConnector Association="So_PlatformModel.FK_IconVisualLogCat" />
+        <AssociationConnector Association="So_PlatformModel.FK_IconVisualMenuItem" />
+        <AssociationConnector Association="So_PlatformModel.FK_MenuIconVisual" />
+        <AssociationConnector Association="So_PlatformModel.FK_PortModIconVisual" />
+        <AssociationConnector Association="So_PlatformModel.FK_SceneLayoutTyp" />
+        <AssociationConnector Association="So_PlatformModel.FK_LocalityPers" />
+        <AssociationConnector Association="So_PlatformModel.FK_LocnOrgLocn" />
+        <AssociationConnector Association="So_PlatformModel.FK_PersLocn" />
+        <AssociationConnector Association="So_PlatformModel.FK_LogEntryLogCat" />
+        <AssociationConnector Association="So_PlatformModel.FK_MenuItemMenu" />
+        <AssociationConnector Association="So_PlatformModel.FK_MenuItemMenuItem" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModStateMenuItem" />
+        <AssociationConnector Association="So_PlatformModel.FK_MenuPortMod" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModAuthRolUserModAuthRol" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModModAuthRol" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModelEntityModelEntityAttribute" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModElmModElmElm" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModElmModElmTyp" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModElmPortModModElm" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModModElm" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModModSetting" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModModState" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModPart" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModPortMod" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModTypMod" />
+        <AssociationConnector Association="So_PlatformModel.FK_ModSettingModSettingValue" />
+        <AssociationConnector Association="So_PlatformModel.FK_SettingModSetting" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgOrgContract" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgOrgCust" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgOrgLocn" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgNoteUser" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgOrgNote" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgOrgOrg" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgOrgOrg1" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgOrgStatusHist" />
+        <AssociationConnector Association="So_PlatformModel.FK_UserOrg" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgStatusOrgTypOrgStatus" />
+        <AssociationConnector Association="So_PlatformModel.FK_OrgTypOrgTypOrgStatus" />
+        <AssociationConnector Association="So_PlatformModel.FK_PartGrpPartGrpPart" />
+        <AssociationConnector Association="So_PlatformModel.FK_PartPartGrpPart" />
+        <AssociationConnector Association="So_PlatformModel.FK_PartIndicatorPart" />
+        <AssociationConnector Association="So_PlatformModel.FK_PartPartSetting" />
+        <AssociationConnector Association="So_PlatformModel.FK_PartScenePart" />
+        <AssociationConnector Association="So_PlatformModel.FK_PartTypPart" />
+        <AssociationConnector Association="So_PlatformModel.FK_PartSettingScenePartPartSetting" />
+        <AssociationConnector Association="So_PlatformModel.FK_SettingPartSetting" />
+        <AssociationConnector Association="So_PlatformModel.FK_PerPerNote" />
+        <AssociationConnector Association="So_PlatformModel.FK_PersPersContact" />
+        <AssociationConnector Association="So_PlatformModel.FK_PerUser" />
+        <AssociationConnector Association="So_PlatformModel.FK_ScenePlaceHolder" />
+        <AssociationConnector Association="So_PlatformModel.FK_PortModPortModModElm" />
+        <AssociationConnector Association="So_PlatformModel.FK_PortModPortModSetting" />
+        <AssociationConnector Association="So_PlatformModel.FK_PortPortMod" />
+        <AssociationConnector Association="So_PlatformModel.FK_PortModSettingPortModSettingValue" />
+        <AssociationConnector Association="So_PlatformModel.FK_SettingPortModSetting" />
+        <AssociationConnector Association="So_PlatformModel.FK_PortPortScene" />
+        <AssociationConnector Association="So_PlatformModel.FK_PortPortUser" />
+        <AssociationConnector Association="So_PlatformModel.FK_ScenePortScene" />
+        <AssociationConnector Association="So_PlatformModel.FK_UserPortUser" />
+        <AssociationConnector Association="So_PlatformModel.FK_ScenePartScenePartPartSetting" />
+        <AssociationConnector Association="So_PlatformModel.FK_SceneScenePart" />
+        <AssociationConnector Association="So_PlatformModel.FK_SettingTypSetting" />
+        <AssociationConnector Association="So_PlatformModel.FK_UserUserLoginHist" />
+        <AssociationConnector Association="So_PlatformModel.FK_UserUserModAuthRol" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowDefWkflowDefWkflowStat" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowDefWkflowInstance" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowTypWkflowDef" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowDefStatReasWkflowDefWkflowStat" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowDefStatReasWkflowDefWkflowStat1" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowStatReasWkflowTypStatReas" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowDefWkflowStatWkflowDefWkflowStatWkflowStat" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowStatWkflowTypWkflowStat" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowStatWkflowTypeWkflowStatWkflowStat" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowInstanceWkflowInstanceDoc" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowInstanceWkflowInstance" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowWkflowStep" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowStatReasWkflowStepHist" />
+        <AssociationConnector Association="So_PlatformModel.FK_WkflowStepHistWkflowStepNote" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgReseller" Width="1.5" PointX="82.875" PointY="41.25" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.OrgOrgReseller" />
+        <EntityTypeShape EntityType="So_PlatformModel.ServicePackage" Width="1.875" PointX="89.125" PointY="41.375" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.FileType" Width="1.5" PointX="28" PointY="10" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.FileTypeDoc" />
+        <EntityTypeShape EntityType="So_PlatformModel.DPWorkflow" Width="1.5" PointX="19.625" PointY="10.25" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.WkflowInstanceDPWorkflow" />
+        <AssociationConnector Association="So_PlatformModel.OrgDPWorkflow" />
+        <AssociationConnector Association="So_PlatformModel.UserDPWorkflow" />
+        <EntityTypeShape EntityType="So_PlatformModel.DataElm" Width="1.5" PointX="25.375" PointY="3.625" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgDocTyp" Width="1.5" PointX="17" PointY="2.625" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.OrgOrgDocTyp" />
+        <EntityTypeShape EntityType="So_PlatformModel.DataElmTyp" Width="1.5" PointX="27.375" PointY="3.625" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.DataElmDataElmTyp" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgDocTypDataElm" Width="2.375" PointX="20" PointY="3.625" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.OrgDocTypOrgDocTypDataElm" />
+        <AssociationConnector Association="So_PlatformModel.DataElmOrgDocTypDataElm" />
+        <AssociationConnector Association="So_PlatformModel.DocOrg" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgUser" Width="1.5" PointX="86" PointY="42.375" FillColor="64, 64, 64" />
+        <AssociationConnector Association="So_PlatformModel.OrgOrgUser" />
+        <AssociationConnector Association="So_PlatformModel.UserOrgUser" />
+        <AssociationConnector Association="So_PlatformModel.AuthItemMod" />
+        <EntityTypeShape EntityType="So_PlatformModel.UserAuthRol" Width="1.5" PointX="43" PointY="35.375" FillColor="64, 64, 64" />
+        <AssociationConnector Association="So_PlatformModel.AuthRolUserAuthRol" />
+        <AssociationConnector Association="So_PlatformModel.UserUserAuthRol" />
+        <AssociationConnector Association="So_PlatformModel.WkflowStatWkflowStepHist" />
+        <AssociationConnector Association="So_PlatformModel.OrgTypOrg" />
+        <EntityTypeShape EntityType="So_PlatformModel.Package" Width="1.5" PointX="74.25" PointY="43.875" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgPackage" Width="1.5" PointX="76.625" PointY="44.25" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.PackageOrgPackage" />
+        <AssociationConnector Association="So_PlatformModel.OrgOrgPackage" />
+        <EntityTypeShape EntityType="So_PlatformModel.MessageTemplate" Width="1.5" PointX="32.5" PointY="4.375" />
+        <EntityTypeShape EntityType="So_PlatformModel.DeliveryMethod" Width="1.5" PointX="35.875" PointY="9.375" />
+        <EntityTypeShape EntityType="So_PlatformModel.Message" Width="1.5" PointX="29.25" PointY="5.25" />
+        <EntityTypeShape EntityType="So_PlatformModel.MessageUser" Width="1.5" PointX="31.75" PointY="9.25" />
+        <AssociationConnector Association="So_PlatformModel.MessageMessageUser" />
+        <AssociationConnector Association="So_PlatformModel.UserMessageUser" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgPackageHist" Width="1.5" PointX="77" PointY="48.75" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.OrgPackageOrgPackageHist" />
+        <AssociationConnector Association="So_PlatformModel.OrgWkflowInstance" />
+        <AssociationConnector Association="So_PlatformModel.WkflowInstanceUser" />
+        <AssociationConnector Association="So_PlatformModel.DocOrgDocTyp" />
+        <EntityTypeShape EntityType="So_PlatformModel.Holiday" Width="1.5" PointX="70.875" PointY="51" />
+        <EntityTypeShape EntityType="So_PlatformModel.SOActivity" Width="1.5" PointX="73" PointY="51" />
+        <EntityTypeShape EntityType="So_PlatformModel.DocTypStatus" Width="1.5" PointX="14.125" PointY="4.75" FillColor="64, 64, 64" />
+        <AssociationConnector Association="So_PlatformModel.OrgTypOrgStatusOrgStatusHist" />
+        <EntityTypeShape EntityType="So_PlatformModel.PortSettingValue" Width="2.25" PointX="47.875" PointY="22.375" />
+        <EntityTypeShape EntityType="So_PlatformModel.PortSetting" Width="1.5" PointX="53.625" PointY="25" />
+        <AssociationConnector Association="So_PlatformModel.SettingPortSetting" />
+        <AssociationConnector Association="So_PlatformModel.PortPortSetting" />
+        <AssociationConnector Association="So_PlatformModel.PortSettingPortSettingValue" />
+        <AssociationConnector Association="So_PlatformModel.DocTypStatusOrgDocTyp" />
+        <AssociationConnector Association="So_PlatformModel.UserOrgDocTyp" />
+        <AssociationConnector Association="So_PlatformModel.UserOrgDocTyp1" />
+        <AssociationConnector Association="So_PlatformModel.UserOrgDocTyp2" />
+        <AssociationConnector Association="So_PlatformModel.PortMessageTemplate" />
+        <AssociationConnector Association="So_PlatformModel.WkflowInstanceMessage" />
+        <AssociationConnector Association="So_PlatformModel.DeliveryMethodMessageUser" />
+        <AssociationConnector Association="So_PlatformModel.WkflowStepHistUser" />
+        <AssociationConnector Association="So_PlatformModel.UserWkflowInstance" />
+        <AssociationConnector Association="So_PlatformModel.OrgDocTypWkflowInstance" />
+        <EntityTypeShape EntityType="So_PlatformModel.SowWkflow" Width="1.5" PointX="11" PointY="4.5" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.SowAttribute" Width="1.5" PointX="4.625" PointY="2.125" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.SowAttributeValueHist" Width="2.625" PointX="2.5" PointY="5.625" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.SowWklowSowAttribute" Width="2" PointX="7.375" PointY="3.75" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.SowAttributeSowWklowSowAttribute" />
+        <AssociationConnector Association="So_PlatformModel.SowWkflowSowWklowSowAttribute" />
+        <EntityTypeShape EntityType="So_PlatformModel.SowWkflowDocSetup" Width="2.125" PointX="13.375" PointY="0.875" FillColor="128, 128, 255" />
+        <AssociationConnector Association="So_PlatformModel.SowWkflowSowWkflowDocSetup" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgResellerDiscHist" Width="1.5" PointX="76.5" PointY="40.5" />
+        <AssociationConnector Association="So_PlatformModel.OrgResellerOrgResellerDiscHist" />
+        <EntityTypeShape EntityType="So_PlatformModel.SOWWkflowOrgResellerDiscOverride" Width="1.5" PointX="8.125" PointY="6.5" />
+        <AssociationConnector Association="So_PlatformModel.SowWkflowSOWWkflowOrgResellerDiscOverride" />
+        <AssociationConnector Association="So_PlatformModel.OrgResellerSOWWkflowOrgResellerDiscOverride" />
+        <AssociationConnector Association="So_PlatformModel.WkflowInstanceSowWkflow" />
+        <AssociationConnector Association="So_PlatformModel.SowWklowSowAttributeSowAttributeValueHist" />
+        <EntityTypeShape EntityType="So_PlatformModel.Month" Width="1.5" PointX="17.25" PointY="0.5" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgDocTypMonth" Width="2.625" PointX="20.75" PointY="0.5" />
+        <AssociationConnector Association="So_PlatformModel.MonthOrgDocTypMonth" />
+        <AssociationConnector Association="So_PlatformModel.OrgDocTypOrgDocTypMonth" />
+        <AssociationConnector Association="So_PlatformModel.OrgDocTypSowWkflowDocSetup" />
+        <EntityTypeShape EntityType="So_PlatformModel.SubWhiteList" Width="1.5" PointX="84.375" PointY="52.125" />
+        <AssociationConnector Association="So_PlatformModel.OrgSubWhiteList" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgMonthCommitment" Width="1.5" PointX="9.125" PointY="0.875" />
+        <AssociationConnector Association="So_PlatformModel.MonthOrgMonthCommitment" />
+        <AssociationConnector Association="So_PlatformModel.OrgOrgMonthCommitment" />
+        <EntityTypeShape EntityType="So_PlatformModel.OrgDocTypDailyUpload" Width="2.125" PointX="24.75" PointY="0.5" />
+        <AssociationConnector Association="So_PlatformModel.OrgDocTypOrgDocTypDailyUpload" />
+        <AssociationConnector Association="So_PlatformModel.OrgOrgDocTypDailyUpload" />
+        <AssociationConnector Association="So_PlatformModel.OrgOrgDocTypMonth" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

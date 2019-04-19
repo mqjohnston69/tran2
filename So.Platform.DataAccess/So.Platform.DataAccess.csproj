@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFF18246-1CD7-4BE2-9405-F1D5FA051803}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>So.Platform.DataAccess</RootNamespace>
+    <AssemblyName>So.Platform.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Breeze.ContextProvider, Version=1.5.0.0, Culture=neutral, PublicKeyToken=f6085f1a45e2ac59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Breeze.Server.ContextProvider.1.5.4\lib\Breeze.ContextProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Breeze.ContextProvider.EF6, Version=1.5.0.0, Culture=neutral, PublicKeyToken=f6085f1a45e2ac59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Breeze.Server.ContextProvider.EF6.1.5.4\lib\Breeze.ContextProvider.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attrib.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttribTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Audit.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditAction.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditCat.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditCatAuditTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditDtl.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthItem.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthItemAuthPerm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthPerm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthRol.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthRolAuthItemAuthPerm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuthRolTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contracts\IDatabaseFactory.cs" />
+    <Compile Include="Contracts\IRepository.cs" />
+    <Compile Include="Contracts\IUnitOfWork.cs" />
+    <Compile Include="Country.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataElm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataElmTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryMethod.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Disposable.cs" />
+    <Compile Include="DocTypStatus.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DPWorkflow.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Elm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElmElm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ElmTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityAttributeTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EquipTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FileType.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateEnitySQL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenerateEnitySQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateExcelData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenerateExcelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratePlatformRepositoryCS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneratePlatformRepositoryCS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Holiday.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IconVisual.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IconVisualTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Implementations\DatabaseFactory.cs" />
+    <Compile Include="Implementations\Repository.cs" />
+    <Compile Include="Implementations\UnitOfWork.cs" />
+    <Compile Include="LayoutTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Locality.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Locn.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogCat.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogEntry.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MenuItem.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageTemplate.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageUser.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mod.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModAuthRol.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelEntity.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelEntityAttribute.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModElm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModElmElm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModElmTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModSetting.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModSettingValue.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModState.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Month.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Org.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgContact.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgCust.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgDocTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgDocTypDailyUpload.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgDocTypDataElm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgDocTypMonth.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgLocn.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgMonthCommitment.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgNote.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgOrg.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgPackage.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgPackageHist.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgReseller.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgResellerDiscHist.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgStatus.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgStatusHist.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgTypOrgStatus.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrgUser.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Package.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Part.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartGrp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartGrpPart.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartIndicator.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartSetting.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Per.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PerNote.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersContact.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceHolder.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformInterceptorLogging.cs" />
+    <Compile Include="PlatformRepository.cs">
+      <DependentUpon>GeneratePlatformRepositoryCS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Port.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortMod.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortModModElm.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortModSetting.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortModSettingValue.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortScene.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortSetting.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortSettingValue.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PortUser.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScenePart.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScenePartPartSetting.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServicePackage.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SettingTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SOActivity.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SoPlatformModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoPlatformModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SoPlatformModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SoPlatformModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoPlatformModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="soUpload.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SowAttribute.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SowAttributeValueHist.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SowWkflow.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SowWkflowDocSetup.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SOWWkflowOrgResellerDiscOverride.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SowWklowSowAttribute.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="State.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubWhiteList.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserAuthRol.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserLoginHist.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserModAuthRol.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowDef.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowDefStatRea.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowDefWkflowStat.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowDefWkflowStatWkflowStat.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowInstance.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowInstanceDoc.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowStat.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowStatRea.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowStepHist.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowStepNote.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WkflowTyp.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ZipCode.cs">
+      <DependentUpon>SoPlatformModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SoPlatformModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SoPlatformModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="SoPlatformModel.edmx.diagram">
+      <DependentUpon>SoPlatformModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBDataExcel.txt">
+      <DependentUpon>GenerateExcelData.tt</DependentUpon>
+    </Content>
+    <Content Include="GenerateEnitySQL.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GenerateEnitySQL.cs</LastGenOutput>
+    </Content>
+    <Content Include="GenerateExcelData.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GenerateExcelData.cs</LastGenOutput>
+    </Content>
+    <Content Include="GeneratePlatformRepositoryCS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GeneratePlatformRepositoryCS.cs</LastGenOutput>
+    </Content>
+    <Content Include="SoPlatformModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SoPlatformModel.edmx</DependentUpon>
+      <LastGenOutput>SoPlatformModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SoPlatformModel.edmx.sql" />
+    <Content Include="SoPlatformModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SoPlatformModel.edmx</DependentUpon>
+      <LastGenOutput>SoPlatformModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

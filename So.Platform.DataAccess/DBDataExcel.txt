@@ -1,0 +1,993 @@
+
+        
+
+Attrib,  Id,Int32
+,AttribTypId,Int32
+,Name,String
+        
+
+AttribTyp,  Id,Int32
+,Name,String
+,Descript,String
+        
+
+Audit,  AuditNbr,Int64
+,AuditCatCd,String
+,AuditTypCd,String
+,AncestorAuditNbr,Int64
+,PortalModuleID,Int64
+,PersID,Int64
+,ContextPersID,Int64
+,StudID,Int64
+,StudVisitID,Int64
+,WorkflowID,Int64
+,AuditDateTime,DateTime
+,DateLastMaint,DateTime
+        
+
+AuditAction,  AuditActionCd,String
+,Descript,String
+,DateLastMaint,DateTime
+        
+
+AuditCat,  AuditCatCd,String
+,Descript,String
+,DateLastMaint,DateTime
+        
+
+AuditCatAuditTyp,  AuditCatCd,String
+,AuditTypCd,String
+,DateLastMaint,DateTime
+        
+
+AuditDtl,  AuditNbr,Int64
+,DtlNbr,Int64
+,AuditActionCd,String
+,TableId,String
+,ValueName,String
+,KeyYN,String
+,OldValue,String
+,NewValue,String
+,DateLastMaint,DateTime
+        
+
+AuditTyp,  AuditTypCd,String
+,Descript,String
+,DateLastMaint,DateTime
+        
+
+AuthItem,  Id,Int32
+,Name,String
+,Descript,String
+,DateLastMaint,DateTime
+,CreateDate,DateTime
+        
+
+AuthItemAuthPerm,  Id,Int32
+,AuthItemId,Int32
+,AuthPermId,Int32
+,DateLastMaint,DateTime
+,CreateDate,DateTime
+        
+
+AuthPerm,  Id,Int32
+,Descript,String
+,PermWeight,String
+,DateLastMaint,DateTime
+,CreateDate,DateTime
+        
+
+AuthRol,  Id,Int32
+,Name,String
+,Descript,String
+,EffDateTime,Decimal
+,InactiveDate,DateTime
+,SignonIdReqdYN,String
+,DateLastMaint,DateTime
+,AuthRoleTypId,Int32
+,CreateDate,DateTime
+        
+
+AuthRolAuthItemAuthPerm,  Id,Int32
+,AuthRolId,Int32
+,AuthRolAuthRolId,Int32
+,AuthItemAuthPermId,Int32
+,DateLastMaint,DateTime
+,CreateDate,DateTime
+        
+
+AuthRolTyp,  Id,Int32
+,DateLastMaint,DateTime
+,Name,String
+,Descript,String
+,CreateDate,DateTime
+        
+
+Contact,  Id,Int32
+,ContactTypId,Int32
+,Value,String
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+,Ext,String
+        
+
+ContactTyp,  Id,Int32
+,DisplayName,String
+,Descript,String
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+,ContactTypCd,String
+        
+
+Country,  Id,Int32
+,Name,String
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+        
+
+DataElm,  Id,Int32
+,Name,String
+,Descript,String
+,DataElmTypId,Int32
+        
+
+DataElmTyp,  Id,Int32
+,Name,String
+,Descript,String
+,DataElmTypCd,String
+        
+
+DeliveryMethod,  Id,Int32
+,Name,String
+,Descript,String
+,CreateDate,DateTime
+,InactiveDate,DateTime
+,Code,String
+        
+
+DocTypStatus,  Id,Int32
+,StatusCd,String
+,DisplayText,String
+,Show,Boolean
+        
+
+DPWorkflow,  Id,Int32
+,OrgId,Int32
+,UserId,Int32
+        
+
+Elm,  Id,Int32
+,ElmTypId,Int32
+,Name,String
+,Descript,String
+,AuthItemId,Int32
+        
+
+ElmElm,  Id,Int32
+,ElmId,Int32
+,AssociatedElmId,Int32
+,AuthItemId,Int32
+        
+
+ElmTyp,  Id,Int32
+,TypCd,String
+,Name,String
+,Descript,String
+        
+
+EntityAttributeTyp,  Id,Int32
+,Name,String
+,TypCd,String
+        
+
+EquipTyp,  Id,Int32
+,Name,String
+,Descript,String
+,EquipTypCd,String
+        
+
+FileType,  Id,Int32
+,Name,String
+,Descript,String
+        
+
+Gender,  Id,Int32
+,GenderCd,String
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+,Name,String
+,Descript,String
+,IconVisualId,Int32
+        
+
+Holiday,  soKey,Guid
+,TheDay,String
+,Descript,String
+        
+
+IconVisual,  Id,Int32
+,Name,String
+,IconPath,String
+,Descript,String
+,Content,String
+,IconVisualTypId,Int32
+        
+
+IconVisualTyp,  Id,Int32
+,Name,String
+,Descript,String
+        
+
+LayoutTyp,  Id,Int32
+,Name,String
+,Descript,String
+        
+
+Locality,  Id,Int32
+,Name,String
+,Code,String
+,Descript,String
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+,CountryCode,String
+        
+
+Locn,  Id,Int32
+,AddressLine1,String
+,AddressLine2,String
+,City,String
+,State,String
+,ZipCode,String
+,GeoLocationData,String
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+,CountryId,Int32
+,Latitude,String
+,Longitude,String
+        
+
+LogCat,  Id,Int32
+,Name,String
+,Descript,String
+,IconVisualId,Int32
+        
+
+LogEntry,  Id,Int32
+,ErrorCode,String
+,Message,String
+,CreateDate,String
+,Application,String
+,LogCatId,Int32
+        
+
+Menu,  Id,Int32
+,Name,String
+,Descript,String
+,IconVisualId,Int32
+,AuthItemId,Int32
+        
+
+MenuItem,  Id,Int32
+,MenuItemId,Int32
+,DisplayName,String
+,Descript,String
+,SeqNbr,Int32
+,NavURL,String
+,State,String
+,IconVisualId,Int32
+,AuthItemId,Int32
+,TemplateUrl,String
+,MenuId,Int32
+,ParentMenuItemId,Int32
+,ModStateId,Int32
+        
+
+Message,  Id,Int32
+,MessageBody,String
+,CreateDate,DateTime
+,DeliveredDate,DateTime
+,WkflowInstanceId,Int32
+,HeaderText,String
+        
+
+MessageTemplate,  Id,Int32
+,Name,String
+,Descript,String
+,TemplateText,String
+,CreateDate,DateTime
+,InactiveDate,DateTime
+,PortId,Int32
+,HeaderText,String
+        
+
+MessageUser,  Id,Int32
+,MessageId,Int32
+,UserId,Int32
+,ReadDate,DateTime
+,DeliveryMethodId,Int32
+        
+
+Mod,  Id,Int32
+,Name,String
+,Descript,String
+,Version,String
+,ModTypId,Int32
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+,DisplayName,String
+,AuthItemId,Int32
+        
+
+ModAuthRol,  Id,Int32
+,ModId,Int32
+,AuthRolId,Int32
+        
+
+ModelEntity,  Id,Int32
+,Name,String
+,Descript,String
+,AuthItemId,Int32
+        
+
+ModelEntityAttribute,  Id,Int32
+,ModelEntityId,Int32
+,EntityAttributeTypId,Int32
+,Name,String
+,Descript,String
+,AuthItemId,Int32
+        
+
+ModElm,  Id,Int32
+,ModId,Int32
+,ElmId,Int32
+,DefaultRoute,String
+,AuthItemId,Int32
+,ModElmTypId,Int32
+        
+
+ModElmElm,  Id,Int32
+,ModElmId,Int32
+,ElmId,Int32
+,AuthItemId,Int32
+        
+
+ModElmTyp,  Id,Int32
+,Name,String
+,TypeCd,String
+,Descript,String
+        
+
+ModSetting,  Id,Int32
+,SettingId,Int32
+,ModId,Int32
+        
+
+ModSettingValue,  Id,Int32
+,ModSettingId,Int32
+,Value,String
+        
+
+ModState,  Id,Int32
+,ModId,Int32
+,Name,String
+,DefaultUrl,String
+,ControllerName,String
+,TemplateUrl,String
+,Template,String
+,IsDefaultState,Boolean
+        
+
+ModTyp,  Id,Int32
+,Name,String
+,Descript,String
+        
+
+Month,  Id,Int32
+,Name,String
+        
+
+Org,  Id,Int32
+,Name,String
+,Descript,String
+,CreateDate,DateTime
+,CreatedUserId,Int32
+,XRefNbr,String
+,OrgTypId,Int32
+,soKey,Guid
+,ModifiedDate,DateTime
+,ModifiedUserId,Int32
+,ApprovedDate,DateTime
+,ApprovedUserId,Int32
+,soOrgType,String
+,soTaxExempt,Boolean
+,Comments,String
+,Logo,Binary
+,Agreement,Binary
+,BillingInfo,Boolean
+,GotAgreement,Boolean
+,InactiveDate,DateTime
+,InactiveUserId,Int32
+,SOAccountNbr,String
+,OtherAccountNbr,String
+,ImageCleanUp,Boolean
+,InviteDate,DateTime
+,SOW,Boolean
+,PromoCode,String
+,BillMe,Boolean
+,soTest,Boolean
+,soDefaultFormTypesKey,Guid
+,SubEmail,String
+        
+
+OrgContact,  Id,Int32
+,OrgId,Int32
+,ContactId,Int32
+        
+
+OrgCust,  Id,Int32
+,Org_Id,Int32
+,SubmissionOpts,Int16
+,RemoveBlank,Boolean
+,SLA,Int32
+        
+
+OrgDocTyp,  Id,Int32
+,OrgId,Int32
+,Name,String
+,Descript,String
+,SubmissionOpt,Int16
+,RemoveBlank,Boolean
+,NeedHelp,Boolean
+,SampleImageName,String
+,SampleImage,Binary
+,PageCount,Int16
+,Disposition,String
+,RouteToBW,Boolean
+,CreateDate,DateTime
+,CreatedUserId,Int32
+,ModifiedDate,DateTime
+,ModifiedUserId,Int32
+,InactiveDate,DateTime
+,InactivatedUserId,Int32
+,Approved,Boolean
+,soKey,Guid
+,ParentId,Int32
+,ImageCleanUp,Boolean
+,Show,Boolean
+,SLAInHours,Int32
+,SepSheetImg,Binary
+,CurrStatusId,Int32
+,InActiveReason,String
+,WkflowInstanceId,Int32
+        
+
+OrgDocTypDailyUpload,  Id,Int32
+,OrgId,Int32
+,OrgDocTypId,Int32
+,Day,DateTime
+,Images,Int32
+,Price,Decimal
+,Revenue,Decimal
+        
+
+OrgDocTypDataElm,  Id,Int32
+,OrgDocTypId,Int32
+,DataElmId,Int32
+,InActiveDate,DateTime
+,PageNbr,Int16
+,DoubleKey,Boolean
+,IndexField,Boolean
+        
+
+OrgDocTypMonth,  Id,Int32
+,OrgId,Int32
+,MonthId,Int32
+,OrgDocTypId,Int32
+,Images,Int32
+,Price,Decimal
+,Revenue,Decimal
+        
+
+OrgLocn,  Id,Int32
+,OrgId,Int32
+,LocnId,Int32
+        
+
+OrgMonthCommitment,  Id,Int32
+,MonthId,Int32
+,OrgId,Int32
+,Commitment,Decimal
+        
+
+OrgNote,  Id,Int32
+,OrgId,Int32
+,NoteText,String
+,CreateDate,DateTime
+,UserId,Int32
+        
+
+OrgOrg,  Id,Int32
+,OrgId,Int32
+,AssociatedOrgId,Int32
+        
+
+OrgPackage,  Id,Int32
+,PackageId,Int32
+,OrgId,Int32
+,CreateDate,DateTime
+,EffectiveDate,DateTime
+,InActiveDate,DateTime
+,AutoRenewal,Boolean
+,RenewalDate,DateTime
+        
+
+OrgPackageHist,  Id,Int32
+,OrgPackageId,Int32
+,TotalClickCount,Int32
+,UsedClickCount,Int32
+,RemainingClickCount,Int32
+,CreateDate,DateTime
+,Price,Double
+,InactiveDate,DateTime
+        
+
+OrgReseller,  Id,Int32
+,LastReviewDate,DateTime
+,NextReviewDate,DateTime
+        
+
+OrgResellerDiscHist,  Id,Int32
+,AgreementNum,Int32
+,Amend,Int32
+,AnnualRevenue,Decimal
+,Discount,Decimal
+,EffectiveDate,DateTime
+,InActiveDate,DateTime
+,OrgResellerId,Int32
+,PDFDoc,Binary
+        
+
+OrgStatus,  Id,Int32
+,OrgTypId,Int32
+,StatusCd,String
+,DisplayText,String
+        
+
+OrgStatusHist,  Id,Int32
+,CreateDate,DateTime
+,OrgId,Int32
+,InactiveDate,DateTime
+,Comment,String
+,OrgTypOrgStatusId,Int32
+        
+
+OrgTyp,  Id,Int32
+,Name,String
+,Descript,String
+,TypCd,String
+        
+
+OrgTypOrgStatus,  Id,Int32
+,OrgTypId,Int32
+,OrgStatusId,Int32
+,OrgStatusHistId,Int32
+        
+
+OrgUser,  Id,Int32
+,OrgId,Int32
+,UserId,Int32
+,Type,String
+        
+
+Package,  Id,Int32
+,Name,String
+,Descript,String
+,CreateDate,DateTime
+,InActiveDate,DateTime
+,TotalClickCount,Int64
+,Price,Double
+        
+
+Part,  Id,Int32
+,Name,String
+,Description,String
+,IsEnabled,Boolean
+,PartTypId,Int32
+,PartIndicatorId,Int32
+,ModId,Int32
+        
+
+PartGrp,  Id,Int32
+,Name,String
+,Descript,String
+        
+
+PartGrpPart,  Id,Int32
+,PartId,Int32
+,PartGrpId,Int32
+        
+
+PartIndicator,  Id,Int32
+,Name,String
+,TooltipText,String
+        
+
+PartSetting,  Id,Int32
+,PartId,Int32
+,SettingId,Int32
+        
+
+PartTyp,  Id,Int32
+,Name,String
+,Descript,String
+        
+
+Per,  Id,Int32
+,FirstName,String
+,LastName,String
+,MiddleName,String
+,Salutation,String
+,Suffix,String
+,DOB,String
+,CreateUserId,Int32
+,Createdate,DateTime
+,DateLastMaint,DateTime
+,LocalityId,Int32
+,GenderId,Int32
+,LocnId,Int32
+,Title,String
+        
+
+PerNote,  Id,Int32
+,PerId,Int32
+,NoteText,String
+,DateLastMaint,DateTime
+        
+
+PersContact,  Id,Int32
+,PersId,Int32
+,ContactId,Int32
+        
+
+PlaceHolder,  Id,Int32
+,SceneId,Int32
+,Row,Int32
+,RowSpan,Int32
+,Column,Int32
+,ColumnSpan,Int32
+        
+
+Port,  Id,Int32
+,Descript,String
+,Enabled,Boolean
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+        
+
+PortMod,  Id,Int32
+,PortId,Int32
+,ModId,Int32
+,IconVisualId,Int32
+,MenuId,Int32
+        
+
+PortModModElm,  Id,Int32
+,Route,String
+,PortModId,Int32
+,ModElmId,Int32
+,HeaderCmdNbr,Int64
+        
+
+PortModSetting,  Id,Int32
+,PortModId,Int32
+,SettingId,Int32
+        
+
+PortModSettingValue,  Id,Int32
+,Value,String
+,PortModSettingId,Int32
+        
+
+PortScene,  Id,Int32
+,PortId,Int32
+,SceneId,Int32
+,Sequence,Int32
+,DefaultScene,Boolean
+        
+
+PortSetting,  Id,Int32
+,SettingId,Int32
+,PortId,Int32
+        
+
+PortSettingValue,  Id,Int32
+,Value,String
+,PortSettingId,Int32
+        
+
+PortUser,  Id,Int32
+,PortId,Int32
+,UserId,Int32
+        
+
+Scene,  Id,Int32
+,LayoutTypId,Int32
+,Rows,Int32
+,Columns,Int32
+,Name,String
+,Descript,String
+        
+
+ScenePart,  Id,Int32
+,SceneId,Int32
+,Part_Id,Int32
+        
+
+ScenePartPartSetting,  Id,Int32
+,ScenePartId,Int32
+,PartSettingId,Int32
+,Value,String
+        
+
+ServicePackage,  Id,Int32
+        
+
+Setting,  Id,Int32
+,ModId,Int32
+,Name,String
+,Descript,String
+,DefaultValue,String
+,SettingTypId,Int32
+        
+
+SettingTyp,  Id,Int32
+,Name,String
+,Descript,String
+        
+
+SOActivity,  soKey,Guid
+,soActivity,String
+,soTitle,String
+,soShowCustomer,Boolean
+        
+
+soUpload,  Id,Int32
+,Name,String
+,Descript,String
+,Location,String
+,soPages,Int32
+,FileTypeId,Int32
+,OrgId,Int32
+,FileExt,String
+,OrgDocTypId,Int32
+,soMethod,String
+,soWorkstation,String
+,soUserData,String
+,soFileName,String
+,soFormType,String
+,soUploadApp,String
+,soUploadAppVersion,String
+,soStorageType,String
+,soStorageLocation,String
+,soStorageContainer,String
+,soStorageKey,String
+,soActivitiesKey,Guid
+,soActivityTime,DateTime
+,soUploadTime,DateTime
+,soUploadDurationMS,Int64
+,soImportTime,DateTime
+,soDeletedTime,DateTime
+,soCompletedTime,DateTime
+,soSyncTime,DateTime
+,soTest,Boolean
+,soUserID,String
+,soKey,Guid
+,soParentUploadsKey,Guid
+,soParentOrganizationsKey,Guid
+,soOrganizationsKey,Guid
+,soItems,Int32
+,soFormTypesKey,Guid
+,soCustomerID,String
+,LockID,String
+,soUsersKey,Guid
+,BlankCount,Int32
+,SepCount,Int32
+,Seq,Int32
+,Destination,String
+,StartIndex,Int32
+,EndIndex,Int32
+,SLAInHours,Int32
+        
+
+SowAttribute,  Id,Int32
+,Name,String
+,Descript,String
+        
+
+SowAttributeValueHist,  Id,Int32
+,Qty,Int32
+,UnitPrice,Decimal
+,ExtendedPrice,Decimal
+,EffectiveDate,DateTime
+,InactiveDate,DateTime
+,SowWklowSowAttributeId,Int32
+        
+
+SowWkflow,  Id,Int32
+,Descript,String
+,ProjectName,String
+,MonthlyCommitment,Decimal
+,EffectiveDate,DateTime
+,InactiveDate,DateTime
+,LastReviewDate,DateTime
+,NextReviewDate,DateTime
+,WkflowInstanceId,Int32
+,Amend,Int16
+,PDFDoc,Binary
+        
+
+SowWkflowDocSetup,  Id,Int32
+,SowWkflowId,Int32
+,DocumentName,String
+,NoIndexes,Int32
+,NoDataFields,Int32
+,ListPrice,Decimal
+,Volume,Int32
+,SLA,Int32
+,OrgDocTypId,Int32
+,SubEmail,String
+        
+
+SOWWkflowOrgResellerDiscOverride,  Id,Int32
+,SowWkflowId,Int32
+,OrgResellerId,Int32
+,Discount,Decimal
+,EffectiveDate,DateTime
+,InactivateDate,DateTime
+        
+
+SowWklowSowAttribute,  Id,Int32
+,SowAttributeId,Int32
+,SowWkflowId,Int32
+        
+
+State,  Id,Int32
+,Abbreviation,String
+,Name,String
+        
+
+SubWhiteList,  Id,Int32
+,OrgId,Int32
+,Address,String
+        
+
+User,  Id,Int32
+,UserName,String
+,Password,String
+,IsSuperAdmin,Boolean
+,CreateDate,DateTime
+,CreateUserId,Int32
+,DateLastMaint,DateTime
+,ModifiedUserId,Int32
+,InactiveDate,DateTime
+,InactiveUserId,Int32
+,IsProcess,Boolean
+,soKey,Guid
+,InviteDate,DateTime
+        
+
+UserAuthRol,  Id,Int32
+,AuthRolId,Int32
+,UserId,Int32
+        
+
+UserLoginHist,  Id,Int32
+,LoginDate,DateTime
+,UserId,Int32
+        
+
+UserModAuthRol,  Id,Int32
+,ModAuthRolId,Int32
+,UserId,Int32
+        
+
+WkflowDef,  Id,Int32
+,Name,String
+,Descript,String
+,WkflowTypId,Int32
+,DateLastMaint,DateTime
+,CreateDate,DateTime
+,Version,String
+,Code,String
+        
+
+WkflowDefStatRea,  Id,Int32
+,WkflowStatReasId,Int32
+,DateLastMaint,DateTime
+,CreateDate,DateTime
+,Action,Int32
+,WkflowDefWkflowStatId,Int32
+,NextWkflowDefWkflowStatId,Int32
+        
+
+WkflowDefWkflowStat,  Id,Int32
+,WkflowStatId,Int32
+,WkflowDefId,Int32
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+,Data,Int32
+,Name,String
+,Start,Boolean
+        
+
+WkflowDefWkflowStatWkflowStat,  Id,Int32
+,WkflowDefWkflowStatId,Int32
+,AvailWkflowStatId,Int32
+,HideFromCust,Boolean
+,ShowInSelect,Boolean
+        
+
+WkflowInstance,  Id,Int32
+,CurrWkflowStatId,Int32
+,WkflowDefId,Int32
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+,AncestorWkflowId,Int32
+,OrgId,Int32
+,UserId,Int32
+,Summary,String
+,Priority,Int16
+,CCUserId,Int32
+        
+
+WkflowInstanceDoc,  Id,Int32
+,WkflowInstanceId,Int32
+,DocId,Int32
+        
+
+WkflowStat,  Id,Int32
+,Descript,String
+,Code,String
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+,Color,String
+        
+
+WkflowStatRea,  Id,Int32
+,Descript,String
+,Code,String
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+        
+
+WkflowStepHist,  Id,Int32
+,WkflowInstanceId,Int32
+,WkflowStatReasId,Int32
+,CreateDate,DateTime
+,CreatedUserId,Int32
+,DateLastMaint,DateTime
+,WkflowStatId,Int32
+        
+
+WkflowStepNote,  Id,Int32
+,NoteText,String
+,WkflowStepHistId,Int32
+,Order,Int32
+,CreatedDate,DateTime
+        
+
+WkflowTyp,  Id,Int32
+,Name,String
+,Descript,String
+,Code,String
+,CreateDate,DateTime
+,DateLastMaint,DateTime
+        
+
+ZipCode,  Id,Int32
+,Code,String
+,Latitude,String
+,Longitude,String
+,Class,String
+,City,String
+,StateCode,String
