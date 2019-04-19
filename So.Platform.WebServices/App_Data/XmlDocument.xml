@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Oc.Carbon.WebServices</name>
+    </assembly>
+    <members>
+        <member name="T:Oc.Carbon.WebServices.App_Start.BreezeWebApiConfig">
+            <summary>
+             Inserts the Breeze Web API controller route at the front of all Web API routes
+            </summary>
+            <remarks>
+             This class is discovered and run during startup; see
+             http://blogs.msdn.com/b/davidebb/archive/2010/10/11/light-up-your-nupacks-with-startup-code-and-webactivator.aspx
+            </remarks>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Common.BlobImage.getCloudBlobContainer(Oc.Carbon.WebServices.Common.VersionData)">
+            <summary>
+            Connect to blob storage.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Common.BlobImage.DeleteImage(System.String,Oc.Carbon.WebServices.Common.VersionData)">
+            <summary>
+            Delete an image.
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Common.BlobImage.UploadImage(System.String,System.Byte[],System.String,Oc.Carbon.WebServices.Common.VersionData,System.String,System.String)">
+            <summary>
+            Upload an image to the blob
+            </summary>
+            <param name="fileName"></param>
+            <param name="imageStream"></param>
+            <param name="UploadKey"></param>
+            <param name="CustomerID"></param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Common.BlobImage.LoadAllImages(Oc.Carbon.WebServices.Common.VersionData)">
+            <summary>
+            Get a list of all images in the blob.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Common.BlobImage.GetImage(System.String,Oc.Carbon.WebServices.Common.VersionData,System.Int32)">
+            <summary>
+            Get an image from the blob, does not delete it.
+            Allows the caller to specify where to store the local file.
+            </summary>
+            <param name="BlobFileName"></param>
+            <param name="LocalFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocTypeController.DataTypes">
+            <summary>
+            Returns List of DataTypes
+            </summary>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocTypeController.creators(System.Int32)">
+            <summary>
+            Returns List of Created users of Doc Types in a Organization
+            </summary>
+            <param name="orgIds">OrgID</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocTypeController.DocTypeStatus">
+            <summary>
+            Returns List of Doctyp Statuses
+            </summary>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocTypeController.search(System.Nullable{System.Int32},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int32})">
+            <summary>
+            Returns DocTyp List based on Filters
+            </summary>
+            <param name="orgIds">OrgID</param>
+            <param name="docName">docName</param>
+            <param name="startDate">startDate</param>
+            <param name="endDate">endDate</param>
+            <param name="createUserID">createUserID</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocTypeController.DefaultDoctyps">
+            <summary>
+            Returns Default DocTyp List
+            </summary>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocTypeController.get(System.Int32)">
+            <summary>
+            Returns Default DocTyp List
+            </summary>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocTypeController.Create(Oc.Carbon.DTO.SolutionDTO.DocTypDTO)">
+            <summary>
+            Create DocTyp
+            </summary>
+            <param name="docTypeDTO">DocTypDTO</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocTypeController.Update(Oc.Carbon.DTO.SolutionDTO.DocTypDTO)">
+            <summary>
+            Update DocType
+            </summary>
+            <param name="docTypeDTO">DocTypDTO</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocTypeController.inActivate(System.Int32,System.String)">
+            <summary>
+            InActivate DocType
+            </summary>
+            <param name="docTypeID">docTypeID</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.DocumentsController.detail(System.Int32)">
+            <summary>
+            Returns details
+            </summary>
+            <param name="id">id</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.EasyForwardController.Raml">
+            <summary>
+            Gets Raml
+            </summary>
+            <returns>Returns a string of RAML</returns>
+        </member>
+        <member name="F:Oc.Carbon.WebServices.Controllers.OrgController._loggerService">
+            <summary>
+            Add the Following....
+                Create Customer Sign Up
+                Create Reseller Sign Up
+                Update Customer
+                Update Reseller
+                Hold Customer
+                Hold Reseller
+            
+            </summary>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UploadActivityController.search(Oc.Carbon.DTO.SolutionDTO.UploadActivitySearchRequest)">
+            <summary>
+            Returns Upload Activity List based on Filters
+            </summary>
+            <param name="orgId">orgId</param>
+            <param name="sourceFile">sourceFile</param>
+            <param name="startDate">startDate</param>
+            <param name="endDate">endDate</param>
+            <param name="strFileName">strFileName</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UploadActivityController.detail(System.Int32)">
+            <summary>
+            Returns Upload file Type and Name
+            </summary>
+            <param name="id">id</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UploadActivityController.fileExceptionStatReasonList">
+            <summary>
+            Returns List of fileExceptions
+            </summary>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UploadActivityController.docExceptionStatReasonList">
+            <summary>
+            Returns List of docExceptions
+            </summary>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UploadActivityController.setFileException(System.Int32,System.Int32,System.String)">
+            <summary>
+            Set Exception DocType
+            </summary>
+            <param name="id">id</param>
+            <param name="reasonid">reasonid</param>
+            <param name="reason">reason</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UploadActivityController.setDocException(System.Int32,System.Int32,System.String)">
+            <summary>
+            Set Exception DocType
+            </summary>
+            <param name="id">id</param>
+            <param name="reasonid">reasonid</param>
+            <param name="reason">reason</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.Invite(Oc.Carbon.DTO.SolutionDTO.UserDTO)">
+            <summary>
+            UserSignup
+            </summary>
+            <param name="docTypeDTO">DocTypDTO</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.ReInvite(Oc.Carbon.DTO.SolutionDTO.UserDTO)">
+            <summary>
+            UserSignup
+            </summary>
+            <param name="docTypeDTO">DocTypDTO</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.Validate(Oc.Carbon.DTO.SolutionDTO.UserDTO)">
+            <summary>
+            ValidateUserInvite
+            </summary>
+            <param name="docTypeDTO">DocTypDTO</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.Search(Oc.Carbon.DTO.SolutionDTO.UserSearchRequest)">
+            <summary>
+            Returns User List based on Filters
+            </summary>
+            <param name="orgIds">OrgID</param>
+            <param name="UserName">UserName</param>
+            <param name="FirstName">FirstName</param>
+            <param name="LastName">LastName</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.User(System.Int32)">
+            <summary>
+            Returns User  based on Id
+            </summary>
+            <param name="userId">userId</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.GetUserId(System.String)">
+            <summary>
+            Returns User  based on Id
+            </summary>
+            <param name="userId">userId</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.Update(Oc.Carbon.DTO.SolutionDTO.UserDTO)">
+            <summary>
+            Update User
+            </summary>
+            <param name="UserDTO">UserDTO</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.InActivateUser(System.Int32)">
+            <summary>
+            Update User
+            </summary>
+            <param name="userId">userId</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.UpdatePwd(Oc.Carbon.DTO.SolutionDTO.UserDTO)">
+            <summary>
+            Update User
+            </summary>
+            <param name="userId">userId</param>
+        </member>
+        <member name="M:Oc.Carbon.WebServices.Controllers.UserController.SendResetPwdInvite(Oc.Carbon.WebServices.Models.ResetPWDRequestInfo)">
+            <summary>
+            Update User
+            </summary>
+            <param name="userId">userId</param>
+        </member>
+    </members>
+</doc>
